@@ -5,17 +5,26 @@
 <form action='calculator.php' method='POST'>
 
     <label name="size">Enter the loan size:</label>
-    <input name='size' type='text'/>
+    <input name='size' type='number'/>
 
     <br><br>
 
     <label name='percent'>Loan percent:</label>
-    <input name='percent' type='text'/><label>%</label>
+    <input name='percent' type='number'/><label>%</label>
     
     <br><br>
 
-    <label name='nper'>Number of payments:</label>
-    <input name='nper' type='text'/>
+    <laben name="freq">Payment type:</label>
+    <select name="freq">
+        <option value="monthly">Monthly</option>
+        <option value="quarterly">Quarterly</option>
+        <option value="annual">Annual</optoin>
+    </select>
+
+    <br><br>
+
+    <label name='periods'>Years:</label>
+    <input name='periods' type='number'/>
     
     <br><br>
 
